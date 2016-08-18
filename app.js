@@ -2,10 +2,8 @@
 var string = document.getElementsByTagName('body')[0].innerText;
 function cloudWords(string) {
   var words1 = string.replace(/\W*\b\w{1,4}\b/g, "");
-  var words = words1.replace(/[.]/g, '').split(/\s/);
-  var cloudWords = {
-  }
-  ;
+  var words = words1.replace(/[.]/g, '').split(/\s/).sort();
+  var cloudWords = {};
   words.forEach(function(w) {
         if (!cloudWords[w]) {
             cloudWords[w] = 0;
