@@ -36,4 +36,4 @@ function sortBySize(words){
   }
 }
 sortBySize(cloudWords(string));
-}
+});
